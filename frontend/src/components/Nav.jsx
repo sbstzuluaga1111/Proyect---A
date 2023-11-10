@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import LoginModal from './LoginModal';
 
 const Nav = () => {
@@ -24,16 +25,15 @@ const Nav = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <span className="nav-link"><button className='btn btn-dark'>Home</button></span>
+              <NavLink to="/" exact className="nav-link"><button className='btn btn-dark'>Home</button></NavLink>
             </li>
             <li className="nav-item">
-              <span className="nav-link"><button className='btn btn-dark'>Products</button></span>
+              <NavLink to="/products" className="nav-link"><button className='btn btn-dark'>Products</button></NavLink>
             </li>
             <li className="nav-item">
-              <span className="nav-link"><button className='btn btn-dark'>Contact</button></span>
+              <NavLink to="/contact" className="nav-link"><button className='btn btn-dark'>Contact</button></NavLink>
             </li>
           </ul>
 

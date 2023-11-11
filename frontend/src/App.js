@@ -13,11 +13,16 @@ function App() {
   return (
     <Router>
       <Nav />
+      <div className='separate'>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/contact" component={Contact} />
         <Route path="/products" component={Product} />
       </Switch>
+      </div>
+      <div className='App-headerr'>
+        <h1>Footer</h1>
+      </div>
     </Router>
   );
 }

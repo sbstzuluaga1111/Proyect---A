@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import LoginModal from './LoginModal';
 
+import '../css/Nav.css';
+
 const Nav = () => {
   const [showModal, setShowModal] = useState(false);
 
